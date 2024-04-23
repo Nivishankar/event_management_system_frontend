@@ -1,0 +1,26 @@
+.Nav-ebtn {
+  margin-left: 25rem;
+}
+
+/* .img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKje7-twloAzVP2zh7U-OEcULa7otqNX8-A&usqp=CAU"),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDg3sBAIDJnwIbKKFD0j3f0DxihrEnBONUhpiD-8SrPa3voDPM3-FKlYziUzkMSPuh9ls&usqp=CAU");
+    width: 100vw;
+    height: 100vh;
+    background-color:azure;
+    background-repeat: no-repeat;
+    background-size: 50vw 50vh,50vw 50vh;
+
+    
+} */
+
+.Nav-col {
+  background-color: azure;
+}
+
+.Home-bcolr {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKje7-twloAzVP2zh7U-OEcULa7otqNX8-A&usqp=CAU");
+  background-size: 30vw 30vh;
+  background-repeat: no-repeat;
+}
