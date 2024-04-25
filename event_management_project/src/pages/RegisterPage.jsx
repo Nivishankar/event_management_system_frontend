@@ -6,7 +6,15 @@ import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "whitesmoke",
+        width: "30rem",
+        height: "45rem",
+        marginLeft: "25rem",
+        marginTop: "5rem",
+      }}
+    >
       <div
         className="d-flex justify-content-center fs-1 fw-bold mt-5 pt-3"
         style={{ fontStyle: "italic" }}
@@ -14,7 +22,7 @@ const Register = () => {
         Register
       </div>
       <br />
-      <Container className="d-flex justify-content-center align-items-center pt-5">
+      <Container className="d-flex justify-content-center align-items-center pt-4">
         <Form>
           <Form.Group className="mb-4">
             <Form.Label>Role</Form.Label>

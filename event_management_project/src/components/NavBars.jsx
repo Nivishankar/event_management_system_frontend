@@ -6,21 +6,22 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
+// import { Image } from "react-bootstrap";
 
 function NavBars() {
   return (
-    <Navbar expand="lg" className="Nav-col">
-      <Container fluid>
-        <Navbar.Brand className="ps-5 ms-5 fs-2">EM</Navbar.Brand>
+    <Navbar className="Nav-col" style={{ height: "4rem", width: "100vw" }}>
+      <Container className="text-center">
+        <Navbar.Brand className="ps-4 ms-5 fs-2">EM</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Form className="ps-3 ms-3">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="search"
               className="me-2"
               aria-label="Search"
-              style={{ width: "20rem" }}
+              style={{ width: "20rem", height: "2rem" }}
             />
           </Form>
           <Nav className="Nav-ebtn">
@@ -29,13 +30,32 @@ function NavBars() {
               title="Events"
               id="navbarScrollingDropdown"
             >
-              <NavDropdown.Item href="/music">Music</NavDropdown.Item>
-              <NavDropdown.Item href="/djparty">DJ Party</NavDropdown.Item>
-              <NavDropdown.Item href="/standup">Stand-Up</NavDropdown.Item>
-              <NavDropdown.Item href="/workshop">Workshop</NavDropdown.Item>
+              <NavDropdown.Item className="Nav-event" href="/music">
+                Music
+              </NavDropdown.Item>
+              {/* <NavDropdown.Item className="Nav-event" href="/djparty">
+                DJ Party
+              </NavDropdown.Item> */}
+              <NavDropdown.Item className="Nav-event" href="/standup">
+                Stand-Up
+              </NavDropdown.Item>
+              <NavDropdown.Item className="Nav-event" href="/workshop">
+                Workshop
+              </NavDropdown.Item>
             </NavDropdown>
 
-            <Button as={Link} to={"/login"} type="button">
+            <Button
+              as={Link}
+              to={"/login"}
+              type="button"
+              style={{
+                width: "6rem",
+                height: "2rem",
+                paddingBottom: "2rem",
+                backgroundColor: "palevioletred",
+                borderColor: "palevioletred",
+              }}
+            >
               Signin
             </Button>
           </Nav>
