@@ -30,7 +30,7 @@ function NavBars() {
               id="navbarScrollingDropdown"
             >
               <NavDropdown.Item href="/music">Music</NavDropdown.Item>
-              <NavDropdown.Item href="/djparty">DJ Party</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/djparty">DJ Party</NavDropdown.Item> */}
               <NavDropdown.Item href="/standup">Stand-Up</NavDropdown.Item>
               <NavDropdown.Item href="/workshop">Workshop</NavDropdown.Item>
             </NavDropdown>

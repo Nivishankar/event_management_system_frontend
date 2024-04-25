@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import DJPage from './pages/DJPage';
+// import DJPage from './pages/DJPage';
 
 import {
   createBrowserRouter,
@@ -21,10 +21,10 @@ const router = createBrowserRouter([
     element: <App/>,
   },
 
-  {
-    path: "djparty",
-    element: <DJPage/>,
-  },
+  // {
+  //   path: "djparty",
+  //   element: <DJPage/>,
+  // },
 
   {
     path: "music",
