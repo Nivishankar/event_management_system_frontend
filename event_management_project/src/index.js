@@ -1,62 +1,53 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import DJPage from './pages/DJPage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import DJPage from './pages/DJPage';
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import MusicPage from './pages/MusicPage';
-import StandupPage from './pages/StandupPage';
-import WorkshopPage from './pages/WorkshopPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MusicPage from "./pages/MusicPage";
+import StandupPage from "./pages/StandupPage";
+import WorkshopPage from "./pages/WorkshopPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
 
-  {
-    path: "djparty",
-    element: <DJPage/>,
-  },
+  // {
+  //   path: "djparty",
+  //   element: <DJPage/>,
+  // },
 
   {
     path: "music",
-    element: <MusicPage/>,
+    element: <MusicPage />,
   },
 
   {
     path: "standup",
-    element: <StandupPage/>,
+    element: <StandupPage />,
   },
 
   {
     path: "workshop",
-    element: <WorkshopPage/>,
+    element: <WorkshopPage />,
   },
 
   {
     path: "/login",
-    element: <LoginPage/>,
+    element: <LoginPage />,
   },
 
   {
     path: "register",
-    element: <RegisterPage/>,
+    element: <RegisterPage />,
   },
 ]);
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <RouterProvider router={router} />
-
-);
-
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
