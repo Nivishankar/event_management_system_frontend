@@ -59,10 +59,12 @@ const LoginPage = () => {
           <Button
             as={Link}
             to={"/"}
-            className="ms-4 text-center "
             variant="primary"
+            className="ms-4 text-center "
             type="submit"
-            style={{ width: "16rem" }}
+            style={{
+              width: "16rem",
+            }}
           >
             Login
           </Button>

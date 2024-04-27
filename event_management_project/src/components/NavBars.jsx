@@ -12,7 +12,12 @@ function NavBars() {
   return (
     <Navbar className="Nav-col" style={{ height: "4rem", width: "100vw" }}>
       <Container className="text-center">
-        <Navbar.Brand className="ps-4 ms-5 fs-2">EM</Navbar.Brand>
+        <Navbar.Brand
+          className="ps-4 ms-5 fs-1"
+          style={{ color: "paleturquoise" }}
+        >
+          EM
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Form className="ps-3 ms-3">
@@ -27,10 +32,13 @@ function NavBars() {
           <Nav className="Nav-ebtn">
             <NavDropdown
               className="pe-5 "
-              title="Events"
+              title={
+                <span style={{ color: "paleturquoise", fontSize: "18px" }}>
+                  Events
+                </span>
+              }
               id="navbarScrollingDropdown"
             >
-
               <NavDropdown.Item className="Nav-event" href="/music">
                 Music
               </NavDropdown.Item>
@@ -43,7 +51,6 @@ function NavBars() {
               <NavDropdown.Item className="Nav-event" href="/workshop">
                 Workshop
               </NavDropdown.Item>
-
             </NavDropdown>
 
             <Button
@@ -54,8 +61,9 @@ function NavBars() {
                 width: "6rem",
                 height: "2rem",
                 paddingBottom: "2rem",
-                backgroundColor: "palevioletred",
-                borderColor: "palevioletred",
+                backgroundColor: "paleturquoise",
+                borderColor: "paleturquoise",
+                color: "black",
               }}
             >
               Signin
