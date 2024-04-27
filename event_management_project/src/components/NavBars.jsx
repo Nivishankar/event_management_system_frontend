@@ -30,6 +30,7 @@ function NavBars() {
               title="Events"
               id="navbarScrollingDropdown"
             >
+
               <NavDropdown.Item className="Nav-event" href="/music">
                 Music
               </NavDropdown.Item>
@@ -42,6 +43,7 @@ function NavBars() {
               <NavDropdown.Item className="Nav-event" href="/workshop">
                 Workshop
               </NavDropdown.Item>
+
             </NavDropdown>
 
             <Button
