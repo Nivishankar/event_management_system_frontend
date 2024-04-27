@@ -1,23 +1,16 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import OrganizerPage from "./pages/OrganizerPage";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import DJPage from './pages/DJPage';
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import MusicPage from './pages/MusicPage';
-import StandupPage from './pages/StandupPage';
-import WorkshopPage from './pages/WorkshopPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage'
-
-
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MusicPage from "./pages/MusicPage";
+import StandupPage from "./pages/StandupPage";
+import WorkshopPage from "./pages/WorkshopPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +47,11 @@ const router = createBrowserRouter([
     path: "register",
     element: <RegisterPage />,
   },
+
+  // {
+  //   path: "/organizer",
+  //   element: <OrganizerPage />,
+  // },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
