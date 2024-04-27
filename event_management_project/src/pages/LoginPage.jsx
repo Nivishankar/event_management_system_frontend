@@ -6,9 +6,17 @@ import { Link } from "react-router-dom";
 
 const LoginPage = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "whitesmoke",
+        width: "30rem",
+        height: "35rem",
+        marginLeft: "25rem",
+        marginTop: "8rem",
+      }}
+    >
       <div
-        className="d-flex justify-content-center fs-2 fw-bold mt-5 pt-5"
+        className="d-flex justify-content-center fs-1 fw-bold mt-5 pt-5"
         style={{ fontStyle: "italic" }}
       >
         Event Management

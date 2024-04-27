@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -15,10 +16,13 @@ import WorkshopPage from './pages/WorkshopPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage'
 
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
 
   // {
@@ -28,35 +32,29 @@ const router = createBrowserRouter([
 
   {
     path: "music",
-    element: <MusicPage/>,
+    element: <MusicPage />,
   },
 
   {
     path: "standup",
-    element: <StandupPage/>,
+    element: <StandupPage />,
   },
 
   {
     path: "workshop",
-    element: <WorkshopPage/>,
+    element: <WorkshopPage />,
   },
 
   {
     path: "/login",
-    element: <LoginPage/>,
+    element: <LoginPage />,
   },
 
   {
     path: "register",
-    element: <RegisterPage/>,
+    element: <RegisterPage />,
   },
 ]);
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <RouterProvider router={router} />
-
-);
-
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
