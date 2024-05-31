@@ -1,10 +1,10 @@
 // import Button from 'react-bootstrap/Button';
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/esm/Button";
-import Form from "react-bootstrap/Form";
+// import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 // import { Image } from "react-bootstrap";
 
@@ -20,7 +20,7 @@ function NavBars() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Form className="ps-3 ms-3">
+          {/* <Form className="ps-3 ms-3">
             <Form.Control
               type="search"
               placeholder="search"
@@ -28,8 +28,8 @@ function NavBars() {
               aria-label="Search"
               style={{ width: "20rem", height: "2rem" }}
             />
-          </Form>
-          <Nav className="Nav-ebtn">
+          </Form> */}
+          {/* <Nav className="Nav-ebtn">
             <NavDropdown
               className="pe-5 "
               title={
@@ -42,33 +42,49 @@ function NavBars() {
               <NavDropdown.Item className="Nav-event" href="/music">
                 Music
               </NavDropdown.Item>
-              {/* <NavDropdown.Item className="Nav-event" href="/djparty">
-                DJ Party
-              </NavDropdown.Item> */}
+              
               <NavDropdown.Item className="Nav-event" href="/standup">
                 Stand-Up
               </NavDropdown.Item>
               <NavDropdown.Item className="Nav-event" href="/workshop">
                 Workshop
               </NavDropdown.Item>
-            </NavDropdown>
-
+            </NavDropdown> */}
+          <Nav className="Nav-ebtn">
             <Button
-              as={Link}
-              to={"/login"}
-              type="button"
+              className="rounded-pill"
               style={{
-                width: "6rem",
-                height: "2rem",
-                paddingBottom: "2rem",
                 backgroundColor: "paleturquoise",
                 borderColor: "paleturquoise",
                 color: "black",
+                fontSize: "18px",
+                marginRight: "4rem",
+                height: "2rem",
+                paddingBottom: "2rem",
               }}
+              as={Link}
+              to="/music"
             >
-              Signin
+              Events
             </Button>
           </Nav>
+          <Button
+            as={Link}
+            to={"/login"}
+            type="button"
+            style={{
+              width: "6rem",
+              height: "1rem",
+              paddingBottom: "2rem",
+              backgroundColor: "paleturquoise",
+              borderColor: "paleturquoise",
+              color: "black",
+            }}
+            className="rounded-pill"
+          >
+            Signin
+          </Button>
+          {/* </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
